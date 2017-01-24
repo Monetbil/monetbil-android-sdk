@@ -1,10 +1,9 @@
 #Monetbil Android SDK
 
 Accept Mobile Money in your Android app https://www.monetbil.com/
-This SDK makes it easy to add Monetbil payments to mobile apps.
+This SDK makes it easy to add In-App Purchases to your mobile apps.
 
 ##How to set up Monetbil SDK
-----------------------------
 
 ###Requirements
 
@@ -12,12 +11,12 @@ This SDK makes it easy to add Monetbil payments to mobile apps.
 
 ###Download the SDK
 
-https://github.com/Monetbil/monetbil-android-library/raw/master/monetbil.aar
+https://github.com/Monetbil/monetbil-android-sdk/raw/master/monetbil.aar
 
 ###Add the SDK to Your Android Studio project
 
 ```android
-File -> New -> New Module -> Import .JAR/.AAR and choose monetbil.aar
+File -> New -> New Module -> Import .JAR/.AAR and choose `monetbil.aar`
 ```
 ###Gradle
 
@@ -36,8 +35,8 @@ dependencies {
 ```
 
 ##Payment integration
-----------------------------
 
+When the user decides to make a purchase, you will initialize Monetbil SDK and whenever the payment is completed, your application will be notified using your implementations of the `PaymentListener` class, this will be done even if the app is not currently running.
 
 ###Making a payment
 
@@ -45,12 +44,13 @@ First, we'll assume that you're going to launch the payment from a button,
 and that you've set the button's `onClick` handler in the layout XML via `android:onClick="onMakePaymentPress"`.
 Then, add the method as:
 
+1. Get your "service_key" and "service_secret" from the [Dashboard](https://www.monetbil.com/services)
+2. Build & start real payment
+
 ```java
 public void onMakePaymentPress(View v) {
 
-    // Your service key
     String service_key = "j9XjZzkFqjeL5fk34e1RNq98thRRwvYf";
-    // Your service secret
     String service_secret = "oxr6Dyw80KlpJefIK7UyywXGHvkOM617wBBIXdZ1NTMWGZ9bSDyJmfX5oMI96204";
 
 	// Initialize a payment
