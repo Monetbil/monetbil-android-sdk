@@ -66,7 +66,7 @@ Next, we'll write `MyPaymentListener` class to get the payment result.
 
 ###Processing payment result
 
-To get the payment result, MyPaymentListener class needs to extends ```javacom.boorgeon.monetbil.PaymentListener```. When a payment is completed, notification about that will be sent to the MyPaymentListener class that was defined in paymentRequest.setPayment_listener.
+To get the payment result, `MyPaymentListener` class needs to extends `com.boorgeon.monetbil.android.PaymentListener`. When a payment is completed, notification about that will be sent to the `MyPaymentListener` class that was defined in `paymentRequest`.
 
 ```java
 package com.boorgeon.monetbil;
