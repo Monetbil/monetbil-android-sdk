@@ -1,5 +1,8 @@
 #Monetbil Android SDK
 
+Accept Mobile Money in your Android app https://www.monetbil.com/
+This SDK makes it easy to add Monetbil payments to mobile apps.
+
 ##How to set up Monetbil SDK
 ----------------------------
 
@@ -11,12 +14,11 @@
 
 https://github.com/Monetbil/monetbil-android-library/raw/master/monetbil.aar
 
-###Import the SDK to your Android Studio project
+###Add the SDK to Your Android Studio project
 
 ```android
 File -> New -> New Module -> Import .JAR/.AAR and choose monetbil.aar
 ```
-
 ###Gradle
 
 You'll need to modify your app/build.gradle file. Add the following (in the dependencies section):
@@ -111,7 +113,7 @@ public class MyPaymentListener extends PaymentListener {
 License
 --------
 
-    Copyright 2013 Serge NTONG.
+    Copyright 2017 Serge NTONG.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
