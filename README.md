@@ -1,8 +1,11 @@
 #Monetbil Android SDK
 
 ##How to set up Monetbil SDK
---------------
+----------------------------
 
+###Requirements
+
+*   Android SDK version 8 (Android 2.2) or later.
 
 ###Download the SDK
 
@@ -10,12 +13,15 @@ https://github.com/Monetbil/monetbil-android-library/raw/master/monetbil.aar
 
 ###Import the SDK to your Android Studio project
 
+```android
 File -> New -> New Module -> Import .JAR/.AAR and choose monetbil.aar
+```
 
 ###Gradle
 
 You'll need to modify your app/build.gradle file. Add the following (in the dependencies section):
-```
+
+```gradle
 dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:support-v4:23.0.0'
@@ -26,6 +32,13 @@ dependencies {
     compile project(':monetbil')
 }
 ```
+
+##Payment integration
+----------------------------
+
+
+###Making a payment
+
 
 License
 --------
