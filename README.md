@@ -112,7 +112,7 @@ public class MyPaymentListener extends PaymentListener {
 
 ##Screenshots
 
-![Image](https://www.monetbil.com/assets/img/monetbil-sdk-example.gif)
+![Image](https://www.monetbil.com/assets/img/monetbil-android-sdk-example.gif)
 
 ##License
 
