@@ -6,12 +6,11 @@
 
 ###Download the SDK
 
-https://github.com/Monetbil/monetbil-android-library/blob/master/monetbil.aar
+https://github.com/Monetbil/monetbil-android-library/raw/master/monetbil.aar
 
-Following his instructions
-```
-File -> New -> New Module -> Import .JAR/.AAR and import monetbil.aar
-```
+
+File -> New -> New Module -> Import .JAR/.AAR and choose monetbil.aar
+
 Then in your project build.gradle (not the top level one, the one under 'app') add the following (in the dependencies section):
 ```
 dependencies {
