@@ -112,4 +112,4 @@ public class MyPaymentListener extends PaymentListener {
 
 ##License
 
-Please refer to this repo's [license file](https://github.com/Monetbil/monetbil-android-sdk/blob/master/LICENCE).
+Please refer to this repo's [license file](LICENSE).
