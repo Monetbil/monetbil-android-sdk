@@ -1,9 +1,12 @@
-Monetbil Android SDK
-====================
+#Monetbil Android SDK
 
-
-Android Studio
+##How to set up Monetbil SDK
 --------------
+
+
+###Download the SDK
+
+https://github.com/Monetbil/monetbil-android-library/blob/master/monetbil.aar
 
 Following his instructions
 ```
