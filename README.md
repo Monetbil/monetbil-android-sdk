@@ -8,6 +8,7 @@
 
 https://github.com/Monetbil/monetbil-android-library/raw/master/monetbil.aar
 
+###Import the SDK to your android project
 
 File -> New -> New Module -> Import .JAR/.AAR and choose monetbil.aar
 
