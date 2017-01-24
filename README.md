@@ -110,6 +110,10 @@ public class MyPaymentListener extends PaymentListener {
 }
 ```
 
+##Screenshots
+
+![Image](../master/images/app-example.gif?raw=true)
+
 ##License
 
 Please refer to this repo's [license file](LICENSE).
