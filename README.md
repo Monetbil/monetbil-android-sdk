@@ -5,7 +5,7 @@
 
 ###Requirements
 
-*   Android SDK version 8 (Android 2.2) or later.
+*   Android 2.0 or later.
 
 ###Download the SDK
 
@@ -39,6 +39,25 @@ dependencies {
 
 ###Making a payment
 
+First, we'll assume that you're going to launch the Monetbil from a button,
+and that you've set the button's `onClick` handler in the layout XML via `android:onClick="onMakePaymentPress"`.
+Then, add the method as:
+
+```java
+public void onMakePaymentPress(View v) {
+
+    // Your service key
+    String service_key = "j9XjZzkFqjeL5fk34e1RNq98thRRwvYf";
+    // Your service secret
+    String service_secret = "oxr6Dyw80KlpJefIK7UyywXGHvkOM617wBBIXdZ1NTMWGZ9bSDyJmfX5oMI96204";
+
+    PaymentRequest paymentRequest = new PaymentRequest(service_key, service_secret);
+    paymentRequest.setAmount(1000); // Amount to be paid
+    paymentRequest.setPayment_listener(MyPaymentListener.class);
+
+    paymentRequest.startPayment(YourActivity.this);
+}
+```
 
 License
 --------
