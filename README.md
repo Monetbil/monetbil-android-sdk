@@ -8,11 +8,13 @@
 
 https://github.com/Monetbil/monetbil-android-library/raw/master/monetbil.aar
 
-###Import the SDK to your android project
+###Import the SDK to your Android Studio project
 
 File -> New -> New Module -> Import .JAR/.AAR and choose monetbil.aar
 
-Then in your project build.gradle (not the top level one, the one under 'app') add the following (in the dependencies section):
+###Gradle
+
+You'll need to modify your app/build.gradle file. Add the following (in the dependencies section):
 ```
 dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
@@ -24,7 +26,6 @@ dependencies {
     compile project(':monetbil')
 }
 ```
-
 
 License
 --------
