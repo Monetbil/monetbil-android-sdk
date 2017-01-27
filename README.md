@@ -120,4 +120,4 @@ https://play.google.com/store/apps/details?id=com.boorgeon.monetbil.android.sdkd
 
 ##License
 
-Please refer to this repo's [license file](LICENSE).
+Please refer to this repo's [LICENSE](LICENSE).
