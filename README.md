@@ -1,7 +1,7 @@
 #Monetbil Android SDK
 
 Accept Mobile Money in your Android app https://www.monetbil.com/.
-This SDK makes it easy to add In-App Purchases to your mobile apps.
+This SDK makes it easy to add In-App Purchase to your mobile apps.
 
 ##How to set up Monetbil SDK
 
