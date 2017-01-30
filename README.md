@@ -94,11 +94,11 @@ public class MyPaymentListener extends PaymentListener {
         String transaction = paymentResponse.getTransaction_UUID();
         String item_ref = paymentResponse.getItem_ref();
         String payment_ref = paymentResponse.getPayment_ref();
-        String msisdn = paymentResponse.getMsisdn());
+        String msisdn = paymentResponse.getMsisdn();
         int amount = paymentResponse.getAmount();
         boolean success = paymentResponse.isSuccess();
 
-        Intent intent = new Intent();
+        Intent intent = this.getIntent();
         intent.putExtra("transaction", transaction);
         intent.putExtra("item_ref", item_ref);
         intent.putExtra("payment_ref", payment_ref);
@@ -118,11 +118,11 @@ public class MyPaymentListener extends PaymentListener {
         String transaction = paymentResponse.getTransaction_UUID();
         String item_ref = paymentResponse.getItem_ref();
         String payment_ref = paymentResponse.getPayment_ref();
-        String msisdn = paymentResponse.getMsisdn());
+        String msisdn = paymentResponse.getMsisdn();
         int amount = paymentResponse.getAmount();
         boolean success = paymentResponse.isSuccess();
 
-        Intent intent = new Intent();
+        Intent intent = this.getIntent();
         intent.putExtra("transaction", transaction);
         intent.putExtra("item_ref", item_ref);
         intent.putExtra("payment_ref", payment_ref);
