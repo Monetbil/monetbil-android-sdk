@@ -74,6 +74,7 @@ To get the payment result, `MyPaymentListener` class needs to extends `com.boorg
 package com.boorgeon.monetbil;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 
 import com.boorgeon.monetbil.android.PaymentListener;
@@ -121,7 +122,7 @@ public class MyPaymentListener extends PaymentListener {
         String msisdn = paymentResponse.getMsisdn();
         int amount = paymentResponse.getAmount();
         boolean success = paymentResponse.isSuccess();
-
+		
         Intent intent = this.getIntent();
         intent.putExtra("transaction", transaction);
         intent.putExtra("item_ref", item_ref);
