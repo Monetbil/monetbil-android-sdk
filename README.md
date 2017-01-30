@@ -90,6 +90,23 @@ public class MyPaymentListener extends PaymentListener {
         super.onPaymentSuccess(paymentResponse);
 
         Log.d("listener", "onPaymentSuccess");
+
+        String transaction = paymentResponse.getTransaction_UUID();
+        String item_ref = paymentResponse.getItem_ref();
+        String payment_ref = paymentResponse.getPayment_ref();
+        String msisdn = paymentResponse.getMsisdn());
+        int amount = paymentResponse.getAmount();
+        boolean success = paymentResponse.isSuccess();
+
+        Intent intent = new Intent();
+        intent.putExtra("transaction", transaction);
+        intent.putExtra("item_ref", item_ref);
+        intent.putExtra("payment_ref", payment_ref);
+        intent.putExtra("msisdn", msisdn);
+        intent.putExtra("amount", amount);
+        intent.putExtra("success", success);
+
+        this.startActivity(YourPaymentSuccessActivity.class);
     }
 
     @Override
@@ -97,6 +114,23 @@ public class MyPaymentListener extends PaymentListener {
         super.onPaymentFailed(paymentResponse);
 
         Log.d("listener", "onPaymentFailed");
+
+        String transaction = paymentResponse.getTransaction_UUID();
+        String item_ref = paymentResponse.getItem_ref();
+        String payment_ref = paymentResponse.getPayment_ref();
+        String msisdn = paymentResponse.getMsisdn());
+        int amount = paymentResponse.getAmount();
+        boolean success = paymentResponse.isSuccess();
+
+        Intent intent = new Intent();
+        intent.putExtra("transaction", transaction);
+        intent.putExtra("item_ref", item_ref);
+        intent.putExtra("payment_ref", payment_ref);
+        intent.putExtra("msisdn", msisdn);
+        intent.putExtra("amount", amount);
+        intent.putExtra("success", success);
+
+        this.startActivity(YourPaymentFailedActivity.class);
     }
 
     @Override
