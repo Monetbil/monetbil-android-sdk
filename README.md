@@ -3,22 +3,22 @@
 Accept Mobile Money in your Android app https://www.monetbil.com/.
 This SDK makes it easy to add In-App Purchase to your mobile apps.
 
-##How to set up Monetbil SDK
+## How to set up Monetbil SDK
 
-###Requirements
+### Requirements
 
 *   Android 2.0 or later.
 
-###Download the SDK
+### Download the SDK
 
 https://github.com/Monetbil/monetbil-android-sdk/raw/master/monetbil.aar
 
-###Add the SDK to Your Android Studio project
+### Add the SDK to Your Android Studio project
 
 ```android
 File -> New -> New Module -> Import .JAR/.AAR and choose `monetbil.aar`
 ```
-###Gradle
+### Gradle
 
 You'll need to modify your app/build.gradle file. Add the following (in the dependencies section):
 
@@ -34,11 +34,11 @@ dependencies {
 }
 ```
 
-##Payment integration
+## Payment integration
 
 When the user decides to make a purchase, you will initialize Monetbil SDK and whenever the payment is completed, your application will be notified using your implementations of the `PaymentListener` class, this will be done even if the app is not currently running.
 
-###Making a payment
+### Making a payment
 
 First, we'll assume that you're going to launch the payment from a button,
 and that you've set the button's `onClick` handler in the layout XML via `android:onClick="onMakePaymentPress"`.
@@ -66,7 +66,7 @@ public void onMakePaymentPress(View v) {
 
 Next, we'll write `MyPaymentListener` class to get the payment result.
 
-###Processing payment result
+### Processing payment result
 
 To get the payment result, `MyPaymentListener` class needs to extends `com.boorgeon.monetbil.android.PaymentListener`. When a payment is completed, notification about that will be sent to the `MyPaymentListener` class that was defined in `paymentRequest`.
 
@@ -145,14 +145,14 @@ public class MyPaymentListener extends PaymentListener {
 }
 ```
 
-###Download the sample app on Google Play Store
+### Download the sample app on Google Play Store
 
 https://play.google.com/store/apps/details?id=com.boorgeon.monetbil.android.sdkdemo
 
-##Screenshots
+## Screenshots
 
 ![Image](https://www.monetbil.com/assets/img/monetbil-android-sdk-example.gif)
 
-##License
+## License
 
 Please refer to this repo's [LICENSE](LICENSE).
