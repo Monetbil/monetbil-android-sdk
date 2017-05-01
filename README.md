@@ -36,7 +36,7 @@ dependencies {
 
 ## Payment integration
 
-When the user decides to make a purchase, you will initialize Monetbil SDK and whenever the payment is completed, your application will be notified using your implementations of the `PaymentListener` class, this will be done even if the app is not currently running.
+When the user decides to make a purchase, you will initialize Monetbil SDK and whenever the payment is completed, your application will be notified using your implementation of the `PaymentListener` class, this will be done even if the app is not currently running.
 
 ### Making a payment
 
