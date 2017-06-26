@@ -28,7 +28,7 @@ dependencies {
     compile 'com.android.support:support-v4:23.0.0'
     compile 'com.android.support:cardview-v7:23.0.0'
     compile 'com.android.support:design:23+'
-    compile 'com.github.traex.rippleeffect:library:1.3'
+    compile 'com.patrickpissurno:ripple-effect:1.3.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile project(':monetbil')
 }
