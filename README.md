@@ -24,12 +24,14 @@ You'll need to modify your app/build.gradle file. Add the following (in the depe
 
 ```gradle
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:support-v4:23.0.0'
-    compile 'com.android.support:cardview-v7:23.0.0'
-    compile 'com.android.support:design:23+'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:support-v4:25.0.0'
+    compile 'com.android.support:design:25+'
+    compile 'com.google.android.gms:play-services-auth:9.8.0'
+    compile 'com.google.android.gms:play-services-gcm:9.8.0'
+    compile 'com.android.support:cardview-v7:25.0.0'
+    compile 'com.android.support:customtabs:25.0.0'
     compile 'com.patrickpissurno:ripple-effect:1.3.1'
-    compile 'com.squareup.picasso:picasso:2.5.2'
     compile project(':monetbil')
 }
 ```
@@ -44,17 +46,16 @@ First, we'll assume that you're going to launch the payment from a button,
 and that you've set the button's `onClick` handler in the layout XML via `android:onClick="onMakePaymentPress"`.
 Then, add the method as:
 
-1. Get your "service_key" and "service_secret" from the [Dashboard](https://www.monetbil.com/services)
+1. Get your "service_key" from the [Dashboard](https://www.monetbil.com/services)
 2. Build & start real payment
 
 ```java
 public void onMakePaymentPress(View v) {
 
     String service_key = "j9XjZzkFqjeL5fk34e1RNq98thRRwvYf";
-    String service_secret = "oxr6Dyw80KlpJefIK7UyywXGHvkOM617wBBIXdZ1NTMWGZ9bSDyJmfX5oMI96204";
 
 	// Initialize a payment
-    PaymentRequest paymentRequest = new PaymentRequest(service_key, service_secret);
+    PaymentRequest paymentRequest = new PaymentRequest(service_key);
     paymentRequest.setAmount(1000); // Amount to be paid
 	
     paymentRequest.setPayment_listener(MyPaymentListener.class);
