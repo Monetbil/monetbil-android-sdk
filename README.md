@@ -24,14 +24,14 @@ You'll need to modify your app/build.gradle file. Add the following (in the depe
 
 ```gradle
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.0.0'
-    compile 'com.android.support:support-v4:25.0.0'
-    compile 'com.android.support:design:25+'
-    compile 'com.google.android.gms:play-services-auth:9.8.0'
-    compile 'com.google.android.gms:play-services-gcm:9.8.0'
-    compile 'com.android.support:cardview-v7:25.0.0'
-    compile 'com.android.support:customtabs:25.0.0'
-    compile 'com.patrickpissurno:ripple-effect:1.3.1'
+    implementation 'com.android.support:appcompat-v7:25.1.0'
+    implementation 'com.android.support:support-v4:25.1.0'
+    implementation 'com.android.support:design:25.1.0'
+    implementation 'com.google.android.gms:play-services-auth:9.8.0'
+    implementation 'com.google.android.gms:play-services-gcm:9.8.0'
+    implementation 'com.android.support:cardview-v7:25.1.0'
+    implementation 'com.android.support:customtabs:25.1.0'
+    implementation 'com.patrickpissurno:ripple-effect:1.3.1'
     compile project(':monetbil')
 }
 ```
