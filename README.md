@@ -146,10 +146,6 @@ public class MyPaymentListener extends PaymentListener {
 }
 ```
 
-### Download the sample app on Google Play Store
-
-https://play.google.com/store/apps/details?id=com.boorgeon.monetbil.android.sdkdemo
-
 If you have any questions or need help, do not hesitate to contact us at [support@monetbil.com](https://www.monetbil.com/contact/support/?referral=github)
 
 ## License
